@@ -1,4 +1,4 @@
-<?php
+php artisan migrate<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
