@@ -23,7 +23,12 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
+     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function tasks()
+    {
+        return $this->hasMany(Task::class);
+    }
 }
